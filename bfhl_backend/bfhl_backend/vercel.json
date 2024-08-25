@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "bfhl_backend.wsgi.application",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "bfhl_backend.wsgi.application"
+      }
+    ]
+  }
+  
